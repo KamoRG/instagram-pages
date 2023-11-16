@@ -30,13 +30,4 @@
 /* Style the social icons section */
 .social-icons {
     text-align: center;
-    margin-top: 2rem;
-}
-
-.social-icons a {
-    display: inline-block;
-    margin: 0 0.5rem;
-    font-size: 2rem;
-    color: #000;
-    text-shadow: 1px 1px 2px #000;
-}
+    margin
