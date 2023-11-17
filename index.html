@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art & Anime Gallery</title>
+    <title>Art & Anime Showcase</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -21,22 +21,20 @@
 
         section {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-around;
-            padding: 20px;
+            align-items: center;
+            height: calc(100vh - 60px);
+            overflow: hidden;
         }
 
         .gallery {
             flex: 1;
-            text-align: center;
-            margin: 20px;
+            overflow: hidden;
         }
 
         .gallery img {
             width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 8px;
+            border-radius: 50%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
         }
@@ -45,14 +43,12 @@
             transform: scale(1.1);
         }
 
-        .qrcode {
-            text-align: center;
-            margin: 20px;
+        .art {
+            background-color: #f57c00;
         }
 
-        .qrcode img {
-            max-width: 200px;
-            height: auto;
+        .anime {
+            background-color: #1976D2;
         }
 
         footer {
@@ -65,33 +61,25 @@
 </head>
 <body>
     <header>
-        <h1>Art & Anime Gallery</h1>
+        <h1>Art & Anime Showcase</h1>
     </header>
 
     <section>
-        <div class="gallery">
-            <h2>Art Gallery</h2>
-            <p>Explore a variety of paintings, glass paintings, sketches, and more!</p>
-            <!-- Add your Instagram embed code or link here -->
-            <img src="art_gallery_preview.jpg" alt="Art Gallery Preview">
+        <div class="gallery art">
+            <a href="https://www.instagram.com/art_gallery/" target="_blank" rel="noopener noreferrer">
+                <img src="art_profile.jpg" alt="Art Gallery Profile">
+            </a>
         </div>
 
-        <div class="gallery">
-            <h2>Anime Collectibles</h2>
-            <p>Discover unique anime collectibles and accessories for your collection.</p>
-            <!-- Add your Instagram embed code or link here -->
-            <img src="anime_gallery_preview.jpg" alt="Anime Gallery Preview">
-        </div>
-
-        <div class="qrcode">
-            <h2>Scan to Follow Us</h2>
-            <p>Scan the QR code to follow our Instagram pages!</p>
-            <img src="qrcode.png" alt="QR Code">
+        <div class="gallery anime">
+            <a href="https://www.instagram.com/anime_collectibles/" target="_blank" rel="noopener noreferrer">
+                <img src="anime_profile.jpg" alt="Anime Gallery Profile">
+            </a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Art & Anime Gallery. All rights reserved.</p>
+        <p>&copy; 2023 Art & Anime Showcase. All rights reserved.</p>
     </footer>
 </body>
 </html>
