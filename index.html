@@ -30,25 +30,19 @@
         .gallery {
             flex: 1;
             overflow: hidden;
+            text-align: center;
         }
 
         .gallery img {
-            width: 100%;
+            width: 100px; /* Adjust the size as needed */
             border-radius: 50%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
+            cursor: pointer;
         }
 
         .gallery img:hover {
             transform: scale(1.1);
-        }
-
-        .art {
-            background-color: #f57c00;
-        }
-
-        .anime {
-            background-color: #1976D2;
         }
 
         footer {
@@ -65,15 +59,15 @@
     </header>
 
     <section>
-        <div class="gallery art">
-            <a href="https://www.instagram.com/art_gallery/" target="_blank" rel="noopener noreferrer">
-                <img src="art_profile.jpg" alt="Art Gallery Profile">
+        <div class="gallery">
+            <a href="https://www.instagram.com/lilith/" target="_blank" rel="noopener noreferrer">
+                <img src="lilith.jpg" alt="Lilith's Instagram">
             </a>
         </div>
 
-        <div class="gallery anime">
-            <a href="https://www.instagram.com/anime_collectibles/" target="_blank" rel="noopener noreferrer">
-                <img src="anime_profile.jpg" alt="Anime Gallery Profile">
+        <div class="gallery">
+            <a href="https://www.instagram.com/lbanimehaven/" target="_blank" rel="noopener noreferrer">
+                <img src="lbanimehaven.jpg" alt="LB Anime Haven's Instagram">
             </a>
         </div>
     </section>
